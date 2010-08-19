@@ -1,25 +1,25 @@
-%define		php_min_version 4.0.2
+%define		php_min_version 5.0.0
 %include	/usr/lib/rpm/macros.php
 Summary:	reCAPTCHA Library for PHP
 Name:		php-recaptcha
-Version:	1.10
+Version:	1.11
 Release:	1
 License:	MIT
 Group:		Development/Languages/PHP
 Source0:	http://recaptcha.googlecode.com/files/recaptcha-php-%{version}.zip
-# Source0-md5:	978b6069fa6397b8e92254110d1657ff
+# Source0-md5:	06dbb91aeb1869b3051d1b87dea0b891
 URL:		http://recaptcha.net/plugins/php/
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.520
 BuildRequires:	unzip
-Requires:	php-common >= 3:%{php_min_version}
+Requires:	php-common >= 4:%{php_min_version}
 Requires:	php-pcre
 Suggests:	php-mcrypt
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 # Exclude optional PHP extension dependencies
-%define		_noautoreq	php(mcrypt)
+%define		_noautoreq	php-mcrypt
 
 %description
 Provides a CAPTCHA for PHP using the reCAPTCHA service.
