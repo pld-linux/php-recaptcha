@@ -3,7 +3,7 @@
 Summary:	reCAPTCHA Library for PHP
 Name:		php-recaptcha
 Version:	1.11
-Release:	1
+Release:	2
 License:	MIT
 Group:		Development/Languages/PHP
 Source0:	http://recaptcha.googlecode.com/files/recaptcha-php-%{version}.zip
@@ -12,8 +12,8 @@ URL:		http://recaptcha.net/plugins/php/
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.520
 BuildRequires:	unzip
+Requires:	php(pcre)
 Requires:	php-common >= 4:%{php_min_version}
-Requires:	php-pcre
 Suggests:	php-mcrypt
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
