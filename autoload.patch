@@ -1,0 +1,19 @@
+--- recaptcha-1.1.2/src/ReCaptcha/autoload.php~	2016-09-15 14:03:34.000000000 +0300
++++ recaptcha-1.1.2/src/ReCaptcha/autoload.php	2016-09-15 14:03:37.164579808 +0300
+@@ -23,15 +23,7 @@
+      * we look here first, so that we don't waste time searching for
+      * test classes in the common case.
+      */
+-    $path = dirname(__FILE__).'/'.$class.'.php';
+-    if (is_readable($path)) {
+-        require_once $path;
+-    }
+-
+-    /* If we didn't find what we're looking for already, maybe it's
+-     * a test class?
+-     */
+-    $path = dirname(__FILE__).'/../tests/'.$class.'.php';
++    $path = dirname(__DIR__).'/'.$class.'.php';
+     if (is_readable($path)) {
+         require_once $path;
+     }
