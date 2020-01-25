@@ -1,6 +1,5 @@
 %define		pkgname	recaptcha
 %define		php_min_version 5.0.0
-%include	/usr/lib/rpm/macros.php
 Summary:	reCAPTCHA is a free service to protect your website from spam and abuse
 Name:		php-%{pkgname}
 Version:	1.1.2
