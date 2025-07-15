@@ -36,7 +36,7 @@ third-party integration with reCAPTCHA.
 %setup -q -n recaptcha-%{version} -a1
 
 mv src/{,ReCaptcha/}autoload.php
-%patch0 -p1
+%patch -P0 -p1
 
 mv recaptcha-php-* recaptcha-php
 mv recaptcha-php/LICENSE{,.recaptcha-php}
