@@ -3,7 +3,7 @@
 Summary:	reCAPTCHA is a free service to protect your website from spam and abuse
 Name:		php-%{pkgname}
 Version:	1.1.2
-Release:	1
+Release:	2
 Epoch:		1
 # google/recaptcha: BSD
 # recaptcha-php: MIT
